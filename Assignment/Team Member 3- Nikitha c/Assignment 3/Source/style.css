@@ -1,0 +1,16 @@
+body {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+img {
+    height: 240px;
+    border-radius: 15px;
+    margin: 10px;
+
+}
