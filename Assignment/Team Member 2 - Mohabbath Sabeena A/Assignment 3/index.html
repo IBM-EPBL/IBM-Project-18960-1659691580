@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fashion Detection</title>
+    <link rel="stylesheet" href="https://smart-fashion-02.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+
+</head>
+
+<body>
+    <h1>Welcome To  SHOPPING !!! Select the theme of your fashion</h1>
+    <div>
+        <img src="https://smart-fashion-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/sfra_1.jpg"
+            alt="Dress" srcset="">
+        <img src="https://smart-fashion-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/sfra_2.jpg"
+            alt="Dress" srcset="">
+        <img src="https://smart-fashion-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/sfra_3.jpg"
+            alt="Dress" srcset="">
+        <img src="https://smart-fashion-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/sfra_4.jpg"
+            alt="Dress" srcset="">
+        <img src="https://smart-fashion-04.s3.jp-tok.cloud-object-storage.appdomain.cloud/sfra_5.jpg"
+            alt="Dress" srcset="">
+    </div>
+    <h1>Use the ChatBot for shopping =========> </h1>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "9fb68a5f-b383-430d-af53-1c80a89ae9d1", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "18be56ae-eb7f-44dc-a13b-cde36b08a829", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
