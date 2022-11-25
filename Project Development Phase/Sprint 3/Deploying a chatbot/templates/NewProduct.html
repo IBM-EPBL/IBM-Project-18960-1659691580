@@ -1,0 +1,302 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Fashion Corner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Cat Club Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='static/css'>
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='static/static/text/css'>
+<script src="static/js/jquery-1.11.1.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            background: purple;
+            height: 80px;
+            width: 100%;
+        }
+      nav ul{
+            float: right;
+          margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 60px;
+            margin: 0 5px;
+        
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: #1b9bff;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none
+        }
+        @media (max-width: 952px){
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px
+            
+            }
+            nav ul li a{
+                font-size: 20px;
+            
+            }
+            a:hover,a.active{
+                background: none;
+                color: #0082e6;
+            }
+            #checkchecked ~ ul{
+                left: 0;
+            }
+        }
+        
+    </style>
+    </head>
+<body>
+<h1 align= 'center'>
+							<a href="index.html">Fashion<span> Corner</span></a>
+						</h1>   
+    <nav>  <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i></label>
+        <ul>  
+
+									<li><a href="/AdminHome">Home</a></li>
+									<li><a href="/NewProduct">NewProduct</a></li>
+									<li><a href="/ProductInfo">ProductInfo</a></li>
+									<li><a href="/ASalesInfo">SalesInfo</a></li>
+
+                                    	<li><a href="/">Logout</a></li>
+
+								</ul> </nav> 
+
+    <form id="form1" name="form1" method="post" action="/RNewProduct" enctype="multipart/form-data">
+
+
+
+  <table width="100%" border="0">
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="32%">&nbsp;</td>
+      <td colspan="2"><div align="center" class="style2">,<h1>New Product Registration</h1> </div></td>
+      <td width="29%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>ProductId</td>
+      <td><input name="pid" type="text" id="pid" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td width="18%">Gender</td>
+      <td width="21%"><select name="gender" id="gender">
+        <option value="--Select--">--Select--</option>
+        <option value="Girls">Girls</option>
+        <option value="Female">Boys</option>
+        <option value="Men">Men</option>
+        <option value="Woman">Woman</option>
+                  </select></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Category</td>
+      <td><label>
+        <select name="cat" id="cat">
+          <option value="--Select--">--Select--</option>
+          <option value="Apparel">Apparel</option>
+          <option value="Footwear">Footwear</option>
+             <option value="Electronic ">Electronic</option>
+        </select>
+      </label></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>SubCategory</td>
+      <td><select name="subcat" id="subcat">
+        <option value="--Select--">--Select--</option>
+        <option value="Topwear">Topwear</option>
+        <option value="Bottomwear">Bottomwear</option>
+        <option value="Dress">Dress</option>
+        <option value="Innerwear">Innerwear</option>
+        <option value="Socks">Socks</option>
+        <option value="Apparel Set">Apparel Set</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Flip Flops">Flip Flops</option>
+        <option value="Sandal">Sandal</option>
+           <option value="TV">TV</option>
+
+      </select></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>ProductType</td>
+      <td><select name="ptype" id="ptype">
+        <option value="--Select--">--Select--</option>
+         <option value="Tops">Tops</option>
+        <option value="Capris">Capris</option>
+        <option value="Dresses">Dresses</option>
+        <option value="Shorts">Shorts</option>
+        <option value="Tshirts">Tshirts</option>
+        <option value="Skirts">Skirts</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Leggings">Leggings</option>
+        <option value="Innerwear Vests">Innerwear Vests</option>
+
+          <option value="Churidar">Churidar</option>
+           <option value="Sandals">Sandals</option>
+
+      </select></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Colour</td>
+      <td><input name="color" type="text" id="color" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Usage</td>
+      <td><label>
+        <input name="usage" type="text" id="usage" />
+      </label></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>ProductTitle</td>
+      <td><input name="ptitle" type="text" id="ptitle" /></td>
+      <td>&nbsp;</td>
+    </tr>
+
+       <tr>
+      <td>&nbsp;</td>
+      <td>Price</td>
+      <td><input name="price" type="text" id="price" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td>&nbsp;</td>
+      <td>Image</td>
+      <td><input name="fileupload" type="file" id="fileupload" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><label>
+        <input type="submit" name="Submit" value="Submit">
+      </label>
+        <label>
+        <input name="Reset" type="reset" id="Reset" value="Reset">
+        </label></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+
+	<div class="copyright">
+		<div class="container">
+			<p>©  All rights reserved | Design by <a href="#">Smart Shopping</a></p>
+		</div>
+	</div>
+	<!-- //copyright -->
+	<script src="static/js/responsiveslides.min.js"></script>
+	<script src="static/js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="static/js/move-top.js"></script>
+<script type="text/javascript" src="static/js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear'
+	        };
+	        */
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+    </form></body></html>
